@@ -1,17 +1,68 @@
 .feedback{
     background-image: url('/img/feedback1.png');
     width: 100%;
-    height: 800px;
     background-repeat: no-repeat;
     background-size: cover;
 
     &__slider{
         margin: auto;
-       max-width: 1170px;
-        overflow-x: hidden;
+        max-width: 1170px;
+        overflow: hidden;
     }
     &__item{
-        background-color: #fff;
-        height: 100px;
+       height: 800px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
     }
+    &__content{
+        padding-bottom: 70px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width:569px) {
+            width: 90%;
+        }
+    }
+    &__stars{
+        display: flex;
+        justify-content: center;
+    }
+    &__text{
+        padding: 35px 0px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 22px;
+        color: white;
+        letter-spacing: 2px;
+        &--name{
+            padding: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__star{
+        margin: 0 3px;
+    }
+}
+.feedback__prev-arrow{
+z-index: 1;
+position: absolute;
+bottom: 0px;
+left: 50%;
+margin-left: -130px;
+}
+.feedback__next-arrow{
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    margin-right: -130px;
 }

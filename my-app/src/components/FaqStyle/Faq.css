@@ -9,6 +9,7 @@
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -19,6 +20,10 @@
 .faq__title {
   text-align: center;
   padding-bottom: 45px;
+}
+
+.faq__question {
+  padding-left: 10px;
 }
 
 .faq__question:hover {
@@ -33,6 +38,7 @@
 }
 
 .faq__block {
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +46,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 568px) {
+  .faq__block {
+    height: auto;
+  }
 }
 
 .faq__answer {

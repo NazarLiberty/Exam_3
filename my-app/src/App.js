@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs'
 import Products from './components/Products'
 import Faq from './components/Faq'
 import Feedback from './components/Feedback'
+import Footer from './components/Footer'
 
 export let searchIcon = <img src="./img/search.svg" alt="search" />;
 export let buttonLine = <div className="button-line"></div>;
@@ -22,6 +23,7 @@ function CBD() {
     <Products />
     <Faq />
     <Feedback />
+    <Footer />
   </div>
 }
 export default CBD;

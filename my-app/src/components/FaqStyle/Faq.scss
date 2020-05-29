@@ -6,6 +6,7 @@
         width: 100%;
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 50px;
     }
     &__open{
         margin-right: 20px;
@@ -16,6 +17,7 @@
     }
 }
 .faq__question{
+    padding-left: 10px;
     &:hover{
         cursor: pointer;
             background-color: #f1f8ecea;
@@ -26,8 +28,12 @@
     }
 }
 .faq__block{
+    height: 450px;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width:568px){
+        height: auto;
+    }
 }
 .faq__answer{
     overflow: hidden;
