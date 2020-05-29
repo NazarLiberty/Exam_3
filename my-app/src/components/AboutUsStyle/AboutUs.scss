@@ -1,0 +1,107 @@
+.about-us{
+    padding-top: 100px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170px; 
+    &__title{
+        letter-spacing: 3px;
+        padding-bottom: 25px;
+        font-size: 24px;
+        color: #1c1c1b;
+        text-align: center;
+        text-transform: uppercase;
+        &--left{
+            text-align: left;
+        }
+        }
+        @media screen and (max-width:1030px) {
+        
+            padding-top: 40px;
+        }
+}
+.logos-block{
+position: relative;
+&__content{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+}
+.about-tabs{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1030px;
+    @media screen and (max-width:1030px) {
+        width: 100%;
+        padding-top: 20px;
+    }
+    &__tabs{
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    &__item{ 
+        &:hover{
+            cursor: pointer;
+            background-color: #ebf5e1;
+        }
+        transition: all 0.6s ease; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        height: 60px;
+        border-bottom: 2px #ced6af solid;
+        margin-bottom: 80px;
+        &--active{
+            border-bottom: 2px black solid;
+        }
+        @media screen and (max-width:992px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__content{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    &__text{
+        padding-bottom: 50px;
+    }
+    &__info{
+        width: 35%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width:992px) {
+            width: 80%;
+            padding-top: 30px;
+        }
+ 
+         
+    }
+    &__images{
+        padding-left: 20px;
+        width: 50%;
+        @media screen and (max-width:992px) {
+            text-align: center;
+            width: 80%;
+            padding-left: 0px;
+           
+        }
+    }
+    &__img{
+        object-fit: cover;
+        padding-bottom: 15px;
+        width: 570px;
+        height: 300px;
+        @media screen and (max-width:1100px) {
+            max-width: 100%;
+        }
+    }
+}

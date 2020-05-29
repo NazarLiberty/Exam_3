@@ -5,8 +5,8 @@ import CBD from './App';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <CBD />
-  </React.StrictMode>,
+
+  <CBD />
+  ,
   document.getElementById('root')
 );

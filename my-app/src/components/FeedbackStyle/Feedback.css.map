@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,gBAAgB,EAAE,yBAAyB;EAC3C,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,iBAAiB,EAAE,SAAS;EAC5B,eAAe,EAAE,KAAK;CAWzB;;AATI,AAAD,iBAAS,CAAA;EACL,MAAM,EAAE,IAAI;EACb,SAAS,EAAE,MAAM;EAChB,UAAU,EAAE,MAAM;CACrB;;AACA,AAAD,eAAO,CAAA;EACH,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "Feedback.scss"
+    ],
+    "names": [],
+    "file": "Feedback.css"
+}
