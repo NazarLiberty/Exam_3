@@ -14,7 +14,7 @@ function LogosBlock() {
         <img src="./img/Holder.png" alt="frame" />
         <div className="logos-block__content">
             <p className="about-us__title">WE are what we are</p>
-            <img src="./img/logos.png" alt="logos" />
+            <img src="./img/Logos.png" alt="logos" />
         </div>
     </div>
 }
