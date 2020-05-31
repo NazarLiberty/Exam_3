@@ -12,8 +12,10 @@
         
     }
     &__item{    
-
         height: 500px;
+    }
+    &__title{
+        text-align: center;
     }
     &__info{
         display: flex;

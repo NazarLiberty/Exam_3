@@ -1,32 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.scss';
 import './HeaderStyle/Header.scss'
 import { searchIcon, buttonLine, headerArrow, headerBottomText } from '../App'
 export default function Header() {
+    const [active, setActive] = useState(false);
+    let activePageNav = "nav__page";
+    let activeUserNav = "nav__user";
+    function toggleMenu() {
+        setActive(!active)
+    }
+    if (active) activePageNav += " nav__page--active"
+    if (active) activeUserNav += " nav__user--active"
     return (
         <div className="header">
             <div className="header__filter">
                 <nav className="nav">
-                    <div className="nav__page">
+                    <div className={activePageNav}>
                         <NavItem text='home' />
                         <NavItem text="products" />
                         <NavItem text="faqs" />
                         <NavItem text="contact us" />
+
                     </div>
                     <div className="nav__logo">
                         CBD
                   </div>
-                    <div className="nav__user">
+                    <div className={activeUserNav}>
                         <NavButton text="Login" />
                         <NavButton text="Search" icon={searchIcon} />
                         <NavButton text="Cart" ammount="(0)" />
+
                     </div>
+                    <NavButtonMobile text="PPP" action={toggleMenu} />
                 </nav>
                 <div className="header__container">
                     <HeaderText />
                 </div>
                 {headerBottomText}
             </div>
+        </div>
+    )
+}
+function NavButtonMobile(props) {
+    return (
+        <div className="nav__mobile" onClick={props.action}>
+            {props.text}
         </div>
     )
 }

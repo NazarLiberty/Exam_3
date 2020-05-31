@@ -3,13 +3,13 @@ import '../App.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
-import '../components/ProductsStyle/Products.css'
+import '../components/ProductsStyle/Products.scss'
 import { buttonLine } from "../App"
 let getFuckOffReactUniqueKey = 1
 export default function Products() {
     return <div className="container">
         <div className="products">
-            <h2 className="page-title">CBD featured products</h2>
+            <h2 className="page-title products__title">CBD featured products</h2>
             <ProductsSlider />
         </div>
     </div>

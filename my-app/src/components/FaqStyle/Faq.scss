@@ -2,11 +2,12 @@
     padding-top: 80px;
     padding-bottom: 140px;
     width: 570px;
-    @media screen and  (max-width:569px){
+    @media screen and  (max-width:578px){
         width: 100%;
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 50px;
+        padding-top: 0px;
     }
     &__open{
         margin-right: 20px;

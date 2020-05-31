@@ -1,4 +1,7 @@
 .header-line{
+    @media screen and (max-width:578px){
+        display: none;
+    }
     transform: rotate(-90deg);
     align-items: center;
     display: flex;
@@ -33,6 +36,16 @@
         flex-direction: column;
         width: 670px;
         margin-left: auto;
+        @media screen and (max-width:992px) {
+            margin: auto;
+        }
+        @media screen and (max-width:768px) {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            width: 90%;
+        }
+     
     }
     &__container{
         margin: auto;
@@ -40,7 +53,6 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         justify-content: center;
     }
    &__filter{
@@ -54,6 +66,10 @@
        font-size: 55px;
        letter-spacing: 15px;
        color: white;
+       @media screen and (max-width:578px) {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
    }
    &__subtitle{
        font-weight: 300;
@@ -79,6 +95,26 @@
     
 }
 .nav{
+  @media screen and (max-width:768px){
+    background-color: rgba(0, 0, 0, 0.63);
+    z-index: 10;
+  }
+    &__mobile{
+        display: none;
+        @media screen and (max-width:768px){
+            margin-left: auto;
+            order: 0;
+            width: 100px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+    flex-wrap: wrap;
     position: fixed;
     top: 0px;
     display: flex; 
@@ -86,6 +122,7 @@
     height: 80px;
     border-bottom: 1px rgba(255, 255, 255, 0.842) solid;
     &__logo{
+        order: 0;
         width: 10%;
         display: flex;
         align-items: center;
@@ -94,17 +131,69 @@
         color: white;
         justify-self: center;
         text-transform: uppercase;
+        @media screen and (max-width:768px){
+            padding-left: 50px;
+        }
     }
     &__page{
+        transition: 1s all ease;
+        transition-delay: .1s;
         display: flex;
         padding-left: 10px;
         width: 45%;
+        @media screen and (max-width:768px){
+         transform: translateY(-300px);
+         overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.795);
+            justify-content: center;
+            order: 1;
+            width:100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 0;
+            .nav__item{
+                font-size: 21px;
+            }
+            &--active{
+                transform: translateY(0px);
+                height: auto;
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+        }
+        @media screen and (max-width:380px){
+            .nav__item{
+                font-size: 17px;
+            }
+        }
+     
     }
-    &__user{
+    &__user{    
+        transition: 1s all ease;
+        transition-delay: .3s;
         margin-left: auto;
         width: 45%;
         display: flex;
         justify-content: flex-end;
+        @media screen and (max-width:768px){
+            transform: translateY(-650px);
+           overflow: hidden;
+            justify-content: center;
+            order: 1;
+            width: 100%;
+            padding-bottom: 0px;
+            background-color: rgba(0, 0, 0, 0.795);
+            .nav__button{     
+                font-size: 22px;
+            }
+            &--active{
+                transform: translateY(0px);
+                height: auto;
+                padding-bottom: 40px;
+            }
+        }
+       
+       
     }
     &__item{
         width: 100px;
@@ -115,6 +204,7 @@
         font-size: 16px;
         color: white;
         text-transform: uppercase;
+      
     }
     &__button{
         display: flex;
@@ -127,6 +217,8 @@
         padding-right: 25px;
         height: 100%;
         border-left: 1px rgba(255, 255, 255, 0.842) solid;
+    
+       
     }
     &__icon{
         margin-right: 9px;

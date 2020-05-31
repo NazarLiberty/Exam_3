@@ -1,13 +1,21 @@
 .footer{
+    justify-content: center;
     flex-wrap: wrap;
     padding-top: 200px;
     width: 1170px;
     display: flex;
     @media screen and (max-width:1170px){
         width: 100%;
+        padding-top: 60px;
     }
     &__info{
         width: 31%;
+        
+        @media screen and (max-width:578px){
+            order: 1;
+            width: 290px;
+            min-width: 300px;
+         }
     }
     &__contacts{
         display: flex;
@@ -16,10 +24,20 @@
         align-items: center;
         width: 38%;
         height: 460px;
+        @media screen and (max-width:578px){
+            order: 0;
+            width: 290px;
+            min-width: 300px;
+            height: 400px;
+         }
     }
     &__info-inner{
         padding-top: 90px;
         margin: auto;
+        @media screen and (max-width:578px){
+           padding-top: 10px;
+           padding-bottom: 10px;
+         }
     }
     &__text{
         text-align: center;
@@ -58,6 +76,7 @@
     }
     &__input-block{
         position: relative;
+    
     }
     &__input{
         &:focus{
@@ -70,6 +89,11 @@
         border: 2px solid #ced6af;
         width: 370px;
         height: 60px;
+        @media screen and (max-width:578px){
+            width: 290px;
+         }
+     
+     
     }
     &__submit{
         display: flex;
@@ -83,6 +107,7 @@
         right: 0px;
         width: 80px;
         height: 50px;
+        
         &:focus{
             outline: none;
         }
@@ -93,6 +118,9 @@
         letter-spacing: 1px;
         font-size: 11px;
         text-transform: uppercase;
+        @media screen and (max-width:578px){
+            padding-bottom: 20px;
+         }
     }
 }
 .footer__line-h{
