@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import './AboutUsStyle/AboutUs.css'
+import './AboutUsStyle/AboutUs.scss'
 
 export default function AboutUs() {
     return <div className="about-us">
@@ -14,7 +14,7 @@ function LogosBlock() {
         <img src="./img/Holder.png" alt="frame" />
         <div className="logos-block__content">
             <p className="about-us__title">WE are what we are</p>
-            <img src="./img/logos.png" alt="logos" />
+            <img src="./img/Logos.png" alt="logos" />
         </div>
     </div>
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import './FaqStyle/Faq.css';
+import './FaqStyle/Faq.scss';
 import { useState } from 'react'
 
 export default function Faq(props) {

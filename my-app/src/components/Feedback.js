@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import './FeedbackStyle/Feedback.css'
+import './FeedbackStyle/Feedback.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
