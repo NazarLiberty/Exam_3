@@ -1,0 +1,107 @@
+.feedback {
+  background-image: url("/img/feedback1.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__slider {
+  margin: auto;
+  max-width: 1170px;
+  overflow: hidden;
+}
+
+.feedback__item {
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__content {
+  padding-bottom: 70px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 569px) {
+  .feedback__content {
+    width: 90%;
+  }
+}
+
+.feedback__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback__text {
+  padding: 35px 0px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.feedback__text--name {
+  padding: 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback__star {
+  margin: 0 3px;
+}
+
+.feedback__prev-arrow {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -130px;
+}
+
+.feedback__next-arrow {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  margin-right: -130px;
+}
+/*# sourceMappingURL=Feedback.css.map */

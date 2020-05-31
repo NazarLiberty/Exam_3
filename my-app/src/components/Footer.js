@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import './FooterStyle/Footer.scss'
+import './FooterStyle/Footer.css'
 
 let footerLineHorizontal = <div className="footer__line-h"></div>
 let footerLineVertical = <div className="footer__line-v"></div>
