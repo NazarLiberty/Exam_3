@@ -7,7 +7,7 @@ import Faq from './components/Faq'
 import Feedback from './components/Feedback'
 import Footer from './components/Footer'
 
-export let searchIcon = <img src="./img/search.svg" alt="search" />;
+export let searchIcon = <img src="/img/search.svg" alt="search" />;
 export let buttonLine = <div className="button-line"></div>;
 export let headerArrow = <img src="./img/header-arrow.svg" alt="arrow" />
 export let headerBottomText = (
