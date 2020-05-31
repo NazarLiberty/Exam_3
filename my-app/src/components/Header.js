@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import './HeaderStyle/Header.css'
+import '../App.scss';
+import './HeaderStyle/Header.scss'
 import { searchIcon, buttonLine, headerArrow, headerBottomText } from '../App'
 export default function Header() {
     return (

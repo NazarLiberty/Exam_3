@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import './AboutUsStyle/AboutUs.css'
+import '../App.scss';
+import './AboutUsStyle/AboutUs.scss'
 
 export default function AboutUs() {
     return <div className="about-us">
