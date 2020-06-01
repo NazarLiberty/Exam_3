@@ -13,7 +13,7 @@ export default function Footer() {
                 <p className="footer__text">return policy </p>
             </div>
         </div>
-        <div className="footer__contacts">
+        <div className="footer__contacts" id="contacts">
             <div className="footer__logo">CBd</div>
             <div className="footer__social">
                 <img src="img/Facebook.png" />

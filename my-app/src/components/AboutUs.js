@@ -3,7 +3,7 @@ import '../App.scss';
 import './AboutUsStyle/AboutUs.scss'
 
 export default function AboutUs() {
-    return <div className="about-us">
+    return <div className="about-us" id="about-us">
         <LogosBlock />
         <AboutTabs />
     </div>

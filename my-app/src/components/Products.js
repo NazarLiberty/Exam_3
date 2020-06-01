@@ -8,7 +8,7 @@ import { buttonLine } from "../App"
 let getFuckOffReactUniqueKey = 1
 export default function Products() {
     return <div className="container">
-        <div className="products">
+        <div className="products" id="products">
             <h2 className="page-title products__title">CBD featured products</h2>
             <ProductsSlider />
         </div>

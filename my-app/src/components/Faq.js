@@ -13,7 +13,7 @@ export default function Faq(props) {
         if (activeItem === e.id) return faqItems.push(<FaqItem question={e.q} id={e.id} answer={e.a} key={e.id} action={actionClick} elClass="faq__answer faq__answer--active" />)
         else return faqItems.push(<FaqItem question={e.q} answer={e.a} key={e.id} id={e.id} action={actionClick} elClass="faq__answer" />)
     })
-    return <div className="faq">
+    return <div className="faq" id="faq">
         <h3 className="page-title faq__title">frequently asked questions</h3>
         <div className="faq__block">
             {faqItems}
